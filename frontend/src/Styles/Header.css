@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+body::-webkit-scrollbar{
+    background-color:  #F6EBE9;
+    width: 15px;
+}
+BODY::-webkit-scrollbar-thumb{
+    background-color: #444140;
+    box-shadow: 2px 0 10px black;
+}
+/*HEADER COMPUTADOR*/
+    #Header1Container{
+        display: flex;
+        padding: 1vw;
+        justify-content: center;
+        align-items: center;
+        background-color: #444140;
+        width: calc(100% - 2vw);
+        height: max-content;
+    }
+    #TitleHeader1{
+        color: white;
+        margin: 0;
+    }
+    #LogoHeader1{
+        background-image: url(https://1.bp.blogspot.com/-eXfP9XUmzHc/X02wni0s3dI/AAAAAAAAPPo/Oj9XbD4WIpgvdS_jmAkJc32Z1vOnUzTXwCLcBGAsYHQ/s16000/LogoP.png);
+        background-size: 100% 100%;
+        height: 100px;
+        width: 100px;
+    }
+
+/*HEADER CELULAR*/
+@media(max-width: 720px){
+    #Header1Container{
+        padding: 2vw;
+        width:  calc(100% - 4vw);
+    }
+    #TitleHeader1{
+        display: none;
+    }
+    #LogoHeader1{
+        background-image: url(https://1.bp.blogspot.com/-4AYfdW1HnGQ/X02wnk_2J_I/AAAAAAAAPPk/znnHlLxw_bINf8jIvcaE3hxEruVJOjcawCLcBGAsYHQ/s16000/Logo.png);
+        background-size: 100% 100%;
+        height: 22.875vw;
+        width: 36.875vw;
+    }
+}
+textarea{
+    resize: none;
+}
+/*BOTONES E INPUTS*/
+input[type=text],input[type=password], input[type=email],input[type=date]{    
+    cursor: text !important;
+}
+button, input, select,option{
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #444140;
+    background-color: white;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    transition: all 500ms;
+}
+button:hover{
+    color: #f7ebe8;
+    background-color: #444140;
+}
+.None{
+    display: none;
+}

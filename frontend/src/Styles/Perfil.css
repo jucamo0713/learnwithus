@@ -1,0 +1,314 @@
+#PerfilContainer{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+}
+.centrar{
+    display:flex;
+    align-items:center; 
+    min-height: calc(100vh - 135px - 2vw);    
+    margin-bottom: 10px;
+}
+.PInfo{
+    width: 200px;
+}
+#FotoContainer{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 100%;
+    height:max-content;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+#InfoPContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+.GroupIP{
+    background-color: #f7ebe8;
+    border-radius: 10px;
+    margin: 2px 0 2px 0;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#GroupIP2{
+    background-color: #f7ebe8;
+    border-radius: 10px;
+    margin: 2px 0 2px 0;
+    width: 95%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+#ButtonPContainer{
+    width: 100%;display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.BP{
+    height: 30px;
+    margin: 5px;
+    width: 95%;
+}
+#FotoAndEC{
+    display: flex;
+    border-radius: 150px 150px 150px 150px;
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+}
+#PopUpPerfíl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+#ContenedorPopUp{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #7c7c7c;
+    min-height: 70vh;
+    border-radius: 10px;
+}
+#ContenedorPopUp2{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #7c7c7c;
+    height: max-content;
+    border-radius: 10px;
+}
+.BotonesCont{
+    width: 60%;
+}
+#formProta{
+width: 100%;
+text-align: center;
+}
+.EsitoPapi{
+    margin: 4px 0 0 4px;
+}
+#Elprota{
+    width: 70%;
+}
+#Elprota::-webkit-file-upload-button{
+    width: 40px;
+}
+#Elprota , #Elprota::-webkit-file-upload-button{
+    height:  40px;
+
+}
+.SubImg{
+    text-align: center;
+    height: 30px;
+    width: 50%;
+    margin: 0 0 10px 0;
+}
+.SubImg2{
+    margin-top: 5px;
+    background-color: white;
+    height: 30px;
+    width: 100%;
+
+}
+#classBotonConfirPerfil{
+    width: 60%;
+    height: 30px;
+    margin-top: 5px;
+    display: none;
+}
+.PINFOCONTRASEÑA{
+    border: none;
+    background-color: #f7ebe8;
+    cursor: auto !important;
+}
+#Elprota::-webkit-file-upload-button{
+    color: transparent;
+    font-weight: bold;
+    background: #444140;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 700ms;
+    background-image: url(/Images/UploadWhite.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#Elprota::-webkit-file-upload-button:hover{
+    background-color: white;
+    background-image: url(/Images/Upload.png);
+    transition: all 700ms;
+}
+.TitleModal1Perfíl{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-color: #444140;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TitleModal1Perfíl2{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-color: #444140;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.TitleModal1Perfíl3{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-color: #444140;
+    color: white;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.TitleModal1Perfíl h2{
+    margin: 2px;
+}
+.MainModal1Perfíl{
+    width: 100%;
+    min-height: calc(70vh - 50px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.MainModal2Perfíl{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.PrevImg{
+    background-color: white;
+    border:2px solid#444140;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.PrevImg2{
+    background-color: white;
+    border:3px solid#444140;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+#FotoPerfíl{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    background-size: 100%;
+    transition: all 700ms;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+#FotoPerfíl:hover{
+    cursor: pointer;
+    background-size: 110%;
+    background-image: url(/Images/Camarita.png) !important;
+    transition: all 700ms;
+}
+#EditPhoto{
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+.Apar{
+    width: 30%;
+    height: 30px;
+}
+.Edit{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-image: url(/Images/Lapiz.png);
+    background-size: 100%;
+    background-position-y: 0;
+    background-position-x: 0;
+}
+.Edit2{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+@media(max-width: 720px){   
+    #ContenedorPopUp, #ContenedorPopUp2{
+        width: 80%;
+    }
+    #PerfilContainer{
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns: 1fr;
+    }
+    .centrar{        
+        min-height: calc(100vh - 35px - 26.875vw);
+    }
+    #FotoContainer{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #InfoPContainer{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #ButtonPContainer{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+
+}
+@media(max-width: 530px){
+    #FotoAndEC{
+        width: 200px;
+        height: 200px;
+
+    }
+    .PInfo{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+        width: 120px;
+    }
+}
