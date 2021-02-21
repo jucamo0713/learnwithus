@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({limit: '10mb', extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors({origin: '*'}));
+app.use(cors({origin: 'https://learnwithus.vercel.app/'}));
 app.use('/Usu', usuarios);
 app.use('/Cur', cursos);
 app.use('/Cla', clases);
